@@ -1,0 +1,26 @@
+Submitter: Lidor Kerem Yeshuah.
+ID: 213205230.
+I have solved taks number 0.
+The Password Is: GOOGLE.
+
+The Solution:
+
+In the main we can see an array with values from the first place to the 5'th place and then
+there are several checks like: correct usage, usage of debugger and so on.
+Then there is a check for the length of the input. 
+And then there is a loop that compare between char from the array and char from the input and checks if they are negatives.
+
+ 789:   c6 45 de b8             movb   $0xb8,-0x22(%rbp) -> 1111111110111000 -> 0000000001000111 -> 71 -> G.
+ 78d:   c6 45 df b0             movb   $0xb0,-0x21(%rbp) -> 1111111110110000 -> 0000000001001111 -> 79 -> O.
+ 791:   c6 45 e0 b0             movb   $0xb0,-0x20(%rbp) -> 1111111110110000 -> 0000000001001111 -> 79 -> O.
+ 795:   c6 45 e1 b8             movb   $0xb8,-0x1f(%rbp) -> 1111111110111000 -> 0000000001000111 -> 71 -> G.
+ 799:   c6 45 e2 b3             movb   $0xb3,-0x1e(%rbp) -> 1111111110110011 -> 0000000001001100 -> 76 -> L.
+ 79d:   c6 45 e3 ba             movb   $0xba,-0x1d(%rbp) -> 1111111110111010 -> 0000000001000101 -> 69 -> E.
+ 7a1:   c6 45 e4 00             movb   $0x0,-0x1c(%rbp)
+ 7a5:   c6 45 e5 00             movb   $0x0,-0x1b(%rbp)
+ 7a9:   c6 45 e6 00             movb   $0x0,-0x1a(%rbp)
+ 7ad:   c6 45 e7 00             movb   $0x0,-0x19(%rbp)
+
+
+need to take the first 6 values, convert them into bits with 2's complemen,
+make "NOT" bitwise on the bits, convert back to decimal and search for the ascii.
